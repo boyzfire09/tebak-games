@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Aku</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TEBAK GAMBAR</h1>
+      <div class="card-wrapper">
+        <div class="card-list">
+            <div class="card-item">
+            
+                <div class="badge">
+                    <div id="soal" class="soal">
+                        <img src="polisi.png" alt="Soal" width="300">
+                    </div>
+                 </div>
+  
+                <div class="input-box">
+                    <input type="text" id="jawaban" autocomplete="off" >
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn" id="submit" onclick="cekJawaban()">OK</button>
+                </div>
+                <div id="popup" class="modal">
+                    <div class="modal-content">
+                        <img id="popup-img" src="" alt="Feedback">
+                   <p id="popup-text"></p>
+                   <div class="btn">
+                        <button onclick="tutupPopup()">Lanjut</button>
+                    </div>
+                </div>
+                </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    <script src="tebak.js"></script>
+</body>
+</html>
